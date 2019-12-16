@@ -6,17 +6,17 @@ const template = () => {
         </div>
         
         <div class="nav-item  grid-elements">
-            <a class="nav-link nav-menu-links" href="#" title="Submit Data" id="dataSubmission"><i class="fas fa-upload"></i>Submit Data</a>
+            <a class="nav-link nav-menu-links" href="#" title="Submit Data" id="dataSubmission"><i class="fas fa-upload"></i> Submit Data</a>
         </div>
         <div id="governanceNav"></div>
         <div id="myProjectsNav"></div>
         
         <div class="nav-item  pages-coming-soon grid-elements">
-            <a class="nav-link nav-menu-links" href="#" title="Request Data" id="dataRequest"><i class="fas fa-database"></i>Request Data</a>
+            <a class="nav-link nav-menu-links" href="#" title="Request Data" id="dataRequest"><i class="fas fa-database"></i> Request Data</a>
         </div>
         
         <div class="nav-item  pages-coming-soon grid-elements">
-            <a class="nav-link nav-menu-links" href="#" title="Analyze Data" id="dataAnalysis"><i class="fas fa-database"></i>Analyze Data</a>
+            <a class="nav-link nav-menu-links" href="#" title="Analyze Data" id="dataAnalysis"><i class="fas fa-database"></i> Analyze Data</a>
         </div>
         
         <div class="navbar-nav ml-auto">
