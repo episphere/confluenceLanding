@@ -74,7 +74,7 @@ export const getSummary = async () => {
         document.getElementById('governanceNav').innerHTML = `
             
             <div class="nav-item  grid-elements">
-                <a class="nav-link nav-menu-links" href="#" title="Data Governance" id="dataGovernance"><i class="fas fa-database"></i> Data Governance</a>
+                <a class="nav-link nav-menu-links" href="#" title="Govern Data" id="dataGovernance"><i class="fas fa-database"></i> Data Governance</a>
             </div>
         `;
         document.getElementById('myProjectsNav').innerHTML = `
@@ -106,7 +106,7 @@ export const getSummary = async () => {
         // else{
         //     document.getElementById('governanceNav').innerHTML = `
         //         <div class="nav-item grid-elements">
-        //             <a class="nav-link nav-menu-links" href="#" title="Data Governance" id="dataGovernance"><i class="fas fa-database"></i> Data Governance</a>
+        //             <a class="nav-link nav-menu-links" href="#" title="Govern Data" id="dataGovernance"><i class="fas fa-database"></i> Data Governance</a>
         //         </div>
         //         
         //     `;
