@@ -178,7 +178,8 @@ body {
 }
 
 label {
-    margin: 0 !important;
+    /*margin: 0 !important;
+    margin-top: $label-margin-top
 }
 
 .chk-box-margin {
