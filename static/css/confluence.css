@@ -178,8 +178,8 @@ body {
 }
 
 label {
-    margin: .5rem !important;
-    margin-top: 5rem
+    margin: .5rem ;
+    margin-top: 5rem;
 }
 
 .chk-box-margin {
