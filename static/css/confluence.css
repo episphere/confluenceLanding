@@ -179,7 +179,7 @@ body {
 
 label {
     margin: 0 !important ;
-    margin-top: 5rem;
+    margin-top: .5rem;
 }
 
 .chk-box-margin {
@@ -208,7 +208,7 @@ label {
 .interactive-summary-label {
     color: #000;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 20rem;
     margin-right: 1rem;
     white-space: nowrap;
     margin-top: 1rem;
