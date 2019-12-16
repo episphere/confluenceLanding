@@ -2,11 +2,11 @@ const template = () => {
     return `
         
         <div class="nav-item  grid-elements">
-            <a class="nav-link nav-menu-links" href="#" title="Explore Dataa" id="dataSummary"><i class="fas fa-chart-bar"></i>Explore</a>
+            <a class="nav-link nav-menu-links" href="#" title="Explore Data" id="dataSummary"><i class="fas fa-chart-bar"></i> Explore Data</a>
         </div>
         
         <div class="nav-item  grid-elements">
-            <a class="nav-link nav-menu-links" href="#" title="Submit Data" id="dataSubmission"><i class="fas fa-upload"></i>Submit</a>
+            <a class="nav-link nav-menu-links" href="#" title="Submit Data" id="dataSubmission"><i class="fas fa-upload"></i>Submit Data</a>
         </div>
         <div id="governanceNav"></div>
         <div id="myProjectsNav"></div>
