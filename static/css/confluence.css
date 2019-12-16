@@ -178,7 +178,7 @@ body {
 }
 
 label {
-    margin: 20rem ;
+    margin: 20rem !important ;
     margin-top: 5rem;
 }
 
