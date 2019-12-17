@@ -269,7 +269,7 @@ export const addEventStudyRadioBtn = () => {
                     const selectConsortiaUIS = document.getElementById('selectConsortiaUIS');
                     studyFormElements.innerHTML = `
                         <div class="form-group">
-                            <label for="selectStudyUIS">Select study</label>
+                            <label for="selectStudyUIS">Select Study</label>
                             <select class="form-control" id="selectStudyUIS" name="selectedStudy" required></select>
                         </div>
                         <div class="form-group">
@@ -314,7 +314,7 @@ export const addEventConsortiaSelect = () => {
         selectStudyUIS.innerHTML = '';
         const firstOption = document.createElement('option');
         firstOption.value = '';
-        firstOption.text = '-- Select study --'
+        firstOption.text = '-- Select Study --'
         selectStudyUIS.appendChild(firstOption);
         entries = filterStudies(entries);
         for(let obj of entries){
@@ -337,13 +337,13 @@ export const addEventUploadStudyForm = () => {
         const consortia = document.getElementById('selectConsortiaUIS');
         const consortiaId = consortia.value;
         const consortiaText = consortia.options[consortia.selectedIndex].text;
-        const study = document.getElementById('selectStudyUIS');
+        const Study = document.getElementById('selectStudyUIS');
         const newStudyName = document.getElementById('newStudyName');
         let studyId;
         let studyName = '';
         if(study){
-            studyId = study.value;
-            studyName = study.options[study.selectedIndex].text;
+            studyId = Study.value;
+            studyName = Study.options[Study.selectedIndex].text;
         }
         else if (newStudyName) {
             const response = await createFolder(consortiaId, newStudyName.value);
@@ -862,9 +862,9 @@ const addEventCPCSelect = () => {
         const array = filterStudies(response.entries);
         if(array.length === 0) return '';
         let template = '';
-        template += '<strong>Select study</strong><select id="CPSSelect" class="form-control" required>'
+        template += '<strong>Select Study</strong><select id="CPSSelect" class="form-control" required>'
         array.forEach((obj, index) => {
-            if(index === 0) template += '<option value=""> -- Select study -- </option>'
+            if(index === 0) template += '<option value=""> -- Select Study -- </option>'
             template += `<option value="${obj.id}">${obj.name}</option>`;
         });
         template += '</select>';
