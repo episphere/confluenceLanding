@@ -42,17 +42,17 @@ fetch('dt.json').then(x=>x.json().then(dt=>{
     let status = cf.dimension(function(d){return d.status});
     
     status_reduce=valUnique('status',0)
-    count_study=valUnique('study',0)
+    count_study=valUnique('Study',0)
     let G_status = status.group().reduce(
         // reduce in
         function(p,v){
-            count_study[v.study]+=1
+            count_study[v.Study]+=1
             status_reduce[v.status]+=1
             return status_reduce[v.status]
         },
         //reduce out
         function(p,v){
-            count_study[v.study]-=1
+            count_study[v.Study]-=1
             status_reduce[v.status]-=1
             return status_reduce[v.status]
         },
@@ -85,23 +85,23 @@ fetch('dt.json').then(x=>x.json().then(dt=>{
 
     // Study braChard
     let C_rowStudy = dc.rowChart("#rowStudy");
-    let study = cf.dimension(function(d){return d.study});
-    //let G_study = study.group().reduceCount()
+    let Study = cf.dimension(function(d){return d.Study});
+    //let G_study = Study.group().reduceCount()
 
-    study_reduce=valUnique('study',0)
+    study_reduce=valUnique('Study',0)
     count_status=valUnique('status',0)
-    let G_study = study.group().reduce(
+    let G_study = Study.group().reduce(
         // reduce in
         function(p,v){
             count_status[v.status]+=1
-            study_reduce[v.study]+=1
-            return study_reduce[v.study]
+            study_reduce[v.Study]+=1
+            return study_reduce[v.Study]
         },
         //reduce out
         function(p,v){
             count_status[v.status]-=1
-            study_reduce[v.study]-=1
-            return study_reduce[v.study]
+            study_reduce[v.Study]-=1
+            return study_reduce[v.Study]
         },
         // ini
         function(p){return 0}
@@ -112,7 +112,7 @@ fetch('dt.json').then(x=>x.json().then(dt=>{
     C_rowStudy
      .width(450)
      .height(200)
-     .dimension(study)
+     .dimension(Study)
      .group(G_study)
      .elasticX(true)
      .colors(d3.scaleLinear().domain([-4,3,4]).range(['blue','cyan','gray']))
@@ -125,7 +125,7 @@ fetch('dt.json').then(x=>x.json().then(dt=>{
          }
          //debugger
      })
-     .ordering(c=>-dt[c.key].tab.study.length)
+     .ordering(c=>-dt[c.key].tab.Study.length)
      .label(function(c){
             return `${c.key} (${c.value})`
          })
