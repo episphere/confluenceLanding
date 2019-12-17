@@ -254,8 +254,8 @@ const getAgeDataForAllStudies = async (studyEntries) => {
         age:[],
         ethnicity : []
     }
-    for(const study of studyEntries){
-        const studyId = study.id;
+    for(const Study of studyEntries){
+        const StudyId = Study.id;
         const folderData = await getFolderItems(studyId);
         const folderEntries = folderData.entries;
         
